@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f1e8;
+  color: #2f2f2f;
+}
+
+.header {
+  background-color: #3f6b35;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 58px;
+  right: 0;
+  background-color: #3f6b35;
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+  background-color: #5f8d4e;
+}
+
+.menu.ativo {
+  display: flex;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 40px 20px;
+  background-image: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url("./Images/ifsc.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 18px;
+  margin-top: 25px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.botao {
+  background-color: #6b4226;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.botao:hover {
+  background-color: #4b2d19;
+}
+
+.secao {
+  padding: 45px 20px;
+}
+
+.secao h2 {
+  color: #3f6b35;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.destaque {
+  background-color: #e6dcc6;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.conteudo img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 15px;
+}
+
+.conteudo p {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  border-left: 8px solid #6b4226;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  color: #3f6b35;
+  margin-bottom: 10px;
+}
+
+.alunos {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.aluno {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.aluno img {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.aluno h3 {
+    color: #3f6b35;
+    font-size: 18px;
+}
+
+footer {
+  background-color: #3f6b35;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-localizacao {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.foto-local {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.funcionamento-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.foto-funcionamento {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.texto-alunos {
+    max-width: 850px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.professores {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.professores h3 {
+    color: #3f6b35;
+    margin-bottom: 15px;
+}
+
+.professores p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+/* Versão para computador */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+  }
+
+  .menu a {
+    border: none;
+    padding: 0 15px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 70px 50px;
+  }
+
+  .hero-texto {
+    max-width: 500px;
+  }
+
+  .conteudo {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .alunos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+  .alunos {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+  .secao {
+    padding: 60px 50px;
+  }
+
+    .funcionamento-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    }
+
+    .funcionamento-container .cards {
+    grid-template-columns: 1fr;
+    width: 520px;
+    gap: 14px;
+    }
+
+    .foto-funcionamento {
+    width: 300px;
+    max-width: 260px;
+    margin: 0;
+    }
+
+}
