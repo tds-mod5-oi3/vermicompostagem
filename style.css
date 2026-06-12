@@ -330,3 +330,63 @@ footer {
     }
 
 }
+
+#imagem-secreta-1 {
+  position: fixed;    
+  z-index: 999;
+  bottom: -125px;      
+  right: -125px;   
+  width: 300px;         
+  opacity: 0;           
+  transition: opacity 0.3s ease;  
+  pointer-events: auto; 
+}
+
+#imagem-secreta-2 {
+  position: fixed;  
+  z-index: 999;  
+  bottom: -50px;      
+  left: -50px;   
+  width: 200px;         
+  opacity: 0;           
+  transition: opacity 0.3s ease;  
+  pointer-events: auto; 
+}
+
+#imagem-secreta-3 {
+  position: fixed;
+  z-index: 999;
+  top: -50px;      
+  left: -50px;   
+  width: 200px;         
+  opacity: 0;           
+  transition: opacity 0.3s ease;  
+  pointer-events: auto; 
+}
+
+#imagem-secreta-4 {
+  position: fixed;   
+  z-index: 999; 
+  top: -25px;      
+  right: -50px;   
+  width: 200px;         
+  opacity: 0;           
+  transition: opacity 0.3s ease;  
+  pointer-events: auto; 
+}
+
+#imagem-secreta-1:hover {
+  opacity: 1;            
+}  
+
+#imagem-secreta-2:hover {
+  opacity: 1;            
+}  
+
+#imagem-secreta-3:hover{
+  opacity: 1;
+}
+
+#imagem-secreta-4:hover{
+  opacity: 1;
+}
