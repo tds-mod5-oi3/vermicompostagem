@@ -7,19 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="./Images/Imagem Secreta.png" alt="Imagem Secreta" id="imagem-secreta-1">
-  <img src="./Images/Imagem Secreta 2.png" alt="Imagem Secreta" id="imagem-secreta-2">
   <img src="./Images/Imagem Secreta 3.png" alt="Imagem Secreta" id="imagem-secreta-3">
   <img src="./Images/Imagem Secreta 4.png" alt="Imagem Secreta" id="imagem-secreta-4">
 
   <header class="header">
     <div class="logo">🌱 Vermicompostagem</div>
 
-    <button class="menu-btn" onclick="abrirMenu()">☰</button>
+    <button class="menu-btn" >☰</button>
 
     <nav id="menu" class="menu">
       <a href="#introducao">Introdução</a>
       <a href="#funcionamento">Funcionamento</a>
+      <a href="#minhocas">Minhocas</a>
       <a href="#localizacao">Localização</a>
       <a href="#alunos">Alunos</a>
     </nav>
@@ -41,7 +40,7 @@
       <h2>Introdução</h2>
       <div class="conteudo">
         <p>
-          A vermicompostagem é um processo biológico de decomposição da matéria orgânica realizado por minhocas e microrganismos onde restos de frutas, verduras, legumes, borra de café, cascas de ovos e outros resíduos orgânicos são consumidos pelas minhocas e transformados em húmus, um composto rico em nutrientes que melhora a qualidade do solo. Além do húmus, o processo também produz um líquido conhecido como biofertilizante, que pode ser utilizado na adubação de plantas.
+          A vermicompostagem é um processo biológico de decomposição da matéria orgânica realizado por minhocas, onde resíduos orgânicos como restos de frutas doces, pó de café, casca de ovo e até papelão são consumidos pelas minhocas e transformados em húmus, um composto rico em nutrientes que melhora a qualidade do solo. Além do húmus, o processo também produz um líquido conhecido como biofertilizante, que pode ser utilizado na adubação de plantas.
         </p>
       </div>
     </section>
@@ -73,7 +72,27 @@
       </div>
     </section>
 
-    <section id="localizacao" class="secao">
+    <section id="minhocas" class="secao">
+        <h2>Minhocas</h2>
+
+        <p class="texto-minhocas">
+          A minhoca que decidimos utilizar é a Eisenia fetida, também conhecida como minhoca-vermelha-da-califórnia.
+        </p>
+
+        <ul class="lista-minhocas">
+          <p style="text-align: center; padding-bottom: 5px">Suas principais vantagens são:</p>
+          <li>Alta capacidade de decomposição de matéria orgânica;</li>
+          <li>Boa taxa de reprodução (dobro de população a cada 30 dias);</li>
+          <li>Fácil adaptação ao ambiente das composteiras;</li>
+          <li>Suporta altas densidades populacionais;</li>
+          <li>Húmus e biofertilizante de alta qualidade;</li>
+          <li>Vive por até 1 mês sem ser alimentada.</li>
+        </ul>
+
+        <img src="./Images/eisenia_fetida.jpg" alt="Minhoca Eisenia fetida" class="foto-minhocas">
+    </section>
+
+    <section id="localizacao" class="secao destaque">
         <h2>Localização</h2>
 
         <p class="texto-localizacao">
@@ -84,7 +103,7 @@
         <img src="./Images/local.png" alt="Local onde está instalada a vermicomposteira" class="foto-local">
     </section>
 
-    <section id="alunos" class="secao destaque">
+    <section id="alunos" class="secao">
       <h2>Alunos envolvidos no projeto</h2>
 
       <p class="texto-alunos">
@@ -108,7 +127,7 @@
         </div>
 
         <div class="aluno">
-            <img src="./Images/semfoto.png" alt="Foto do aluno">
+            <img src="./Images/porado.jpeg" alt="Foto do aluno">
             <h3>Pedro Henrique Mignoni Franz</h3>
         </div>
       </div>
